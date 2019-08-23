@@ -1,0 +1,19 @@
+.icon {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr; 
+    grid-gap: 0px 0px;
+    padding: 0px;
+}
+
+.iconItem {
+    padding: 0px;
+    background-color: white;
+    border: 1px solid black;
+    justify-self: center;
+}
+
+h1 {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
