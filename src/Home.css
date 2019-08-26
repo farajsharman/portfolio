@@ -1,0 +1,59 @@
+.containerHome {
+    font-weight: 900;
+     text-align: center;
+     /* background image */
+     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url"./src\20141127_120312.jpg";
+     background-size: cover;
+     width: 100%;
+     height: 100vh;
+     position: relative;
+     float: right;
+ }
+ 
+ .homeIconContainer {
+     margin:5% 5%;
+     display: flex;
+     justify-content: flex-end;
+     opacity: 5;
+ }
+ 
+ li.telephone {
+     list-style-image: url('logo-image.js/abouticon.png');
+ }
+     
+ li.email {
+     list-style-image: url'src\logo-image.js\contacticon.png';
+ }
+                                                         /* Get some sort of animation in images*/
+ li.github {
+     list-style-image: url('logo-image.js/github.png');
+ }
+ 
+ li.linkedin {
+     list-style-image: url('/src/linkedin.svg');
+ }
+ 
+ .details {
+     text-align:center;
+     position: relative;
+     top: 40px;
+     padding-bottom: 10px;
+ }
+ 
+ .detailContent {
+     margin: 16px;
+     font-size: 10px;
+ }
+ 
+ @media only screen and (min-width: 46.875em) {
+     .detailContent {
+         margin: 0px;
+     }
+ 
+     .name {
+     font-size: 40px;
+     }
+     .detailContent {
+         font-size: 16px;
+     }
+ }

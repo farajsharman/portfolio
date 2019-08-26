@@ -1,48 +1,137 @@
-.container {
-  display: grid;
-  /* grid-gap: 1rem; */
-  grid-template-columns: 0.5fr 4fr;
-  grid-template-rows: 0.5fr 1fr 3fr 3fr 3fr 3fr;
-  grid-template-areas: 'header image '
-                       'header about'
-                       'header skills'
-                       'header project'
-                       'header contact';
-  background-color: white;
+body {
+  margin: 0px ;
+  padding: 0px;
+  color:black;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  box-sizing: border-box;
+  background-color: #dfd9c8;
 }
-.header {
-grid-area: header;
-border-right: solid black;
+  /* background-image: */
+/* repeating-linear-gradient(120deg, rgba(255, 255, 255, 0.801), rgba(255, 255, 255, 0.801) 1px, transparent 1px, transparent 60px),
+repeating-linear-gradient(60deg, rgba(255, 255, 255, 0.801), rgba(255, 255, 255, 0.801) 1px, transparent 1px, transparent 60px), */
+  /* linear-gradient(60deg, rgba(214, 208, 208, 0.925) 25%, transparent 25%, transparent 75%,  rgba(214, 208, 208, 0.925) 75%,  rgba(214, 208, 208, 0.925)),
+  linear-gradient(120deg, rgba(214, 208, 208, 0.925) 25%, transparent 25%, transparent 75%, rgba(214, 208, 208, 0.925) 75%, rgba(214, 208, 208, 0.925));
+  background-size: 70px 120px;  */
+
+/* Assign grid instructions to our parent grid container, mobile-first (hide the sidenav) */
+.grid-container {
+display: grid;
+grid-template-columns: 1fr; /* Side nav is hidden on mobile */
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+grid-template-areas:
+  'home'
+  'about'
+  'skills'
+  'project'
+  'contact';
+height: 100vh;
+
 }
 
-.about {
-grid-area: about;
+.menu-icon {
+position: fixed; /*Needs to stay visible for all mobile scrolling */
+display: flex;
+top: 5px;
+left: 10px;
+align-items: center;
+justify-content: center;
+background-color: #DADAE3;
+border-radius: 50%;
+cursor: pointer;
+padding: 12px;
 }
 
-.skills {
-grid-area: skills;
+#header {
+  grid-area: header;
+  height: 100%;
+  width: 140px;
+  position: fixed;
+  overflow-y: auto;
+  transform: translateX(-245px);
+  transition: all .6s ease-in-out;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  background: white;
 }
 
-.project {
-grid-area: project;
+#header.active {
+  transform: translateX(0);
+}
+.headerList {
+  padding: 0;
+  margin-top: 85px;
+  list-style-type: none;
+  
 }
 
-.contact {
-grid-area: contact;
+.headerListItem {
+  padding: 20px 20px 20px 30px;
+  color: #ddd;
+}
+
+.headerListItem:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+
+#home {
+  grid-area: home;
+
+}
+
+#about {
+  grid-area: about;
+ 
+}
+
+#skills {
+  grid-area: skills;
+}
+
+#project {
+  grid-area: project;
+}
+
+#contact {
+  grid-area: contact;
 }
 .title {
-background-color:rgb(128, 128, 128);
-color: black;
-text-align: left;
+  margin: 0px;
+  background-color:  #008073;
+  color: white;
+  text-align: center;
+  height: 40px;
+  padding-top: 10px;
+  font-size: 30px;
 }
 
-#image {
-background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-url("./20141127_120312.jpg");
-/* background-size: cover; */
-width: 80vw;
-height: 50vh;
-position: relative;
-float: right;
-color: white;
+a {
+  color: #008073;
 }
+/* Non-mobile styles, 750px breakpoint */
+@media only screen and (min-width: 46.875em) {
+  /* Show the sidenav */
+.grid-container {
+  grid-template-columns: 140px 1fr; /* Show the side nav for non-mobile screens */
+  grid-template-areas:
+    'header home'
+    'header about'
+    'header skills'
+    'header project'
+    'header contact';
+}
+#header {
+  position: fixed;
+  transform: translateX(0);
+}
+.menu-icon {
+  display: none;
+}
+.title {
+  height: 55px;
+  padding-top: 15px;
+  font-size: 40px;
+}
+
+}
+

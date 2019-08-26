@@ -1,0 +1,35 @@
+.contain {
+    margin:10%;
+    /* padding-left: 10%; */
+    font-size: 15px;
+    display: grid;
+    justify-content: center;
+}
+
+ul.contain li.telephone {
+    list-style-image: url('logo-image.js/contacticon.png');
+    padding-bottom: 20px;
+}
+    
+ul.contain li.email {
+    list-style-image: url('logo-image.js/contactIcon.png');
+    padding-bottom: 20px;
+}
+    
+ul.contain li.github {
+    list-style-image: url('logo-image.js/contactIcon.png');
+    padding-bottom: 20px;
+}
+
+ul.contain li.linkedin {
+    list-style-image: url('/src/linkedin.svg');
+    padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 46.875em) {
+    #contact .contain {
+        margin: 5%; 
+        font-size: 25px;
+        padding-left: 15%; 
+    }
+}
