@@ -33,14 +33,14 @@ export default function Project() {
                 </div>
         
     
-<div>
+<div
 
    className='extra'
 
    href='https://github.com/farajsharman'
    target='_blank'
    rel='noopener noreferrer'
-   title='to view more project'
+   title='to view more project' >
    more
 </div>
 

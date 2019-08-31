@@ -10,13 +10,14 @@ export default function Contact() {
           onClick={() => window.open("tel:07706022514")}
         >
           {" "}
-          <a href="tel:07706022514" />
+          <a href="tel:07706022514" alt="telephone">
+            {" "}
+          </a>
         </li>
         <li
           className="item email"
           onClick={() => window.open("mailto:farajsharman@yahoo.com.")}
         >
-    
           <a href="mailto:farajsharman@yahoo.com">farajsharman@yahoo.com </a>
         </li>
         <li
@@ -33,8 +34,11 @@ export default function Contact() {
           onClick={() =>
             window.open("https://www.linkedin.com/in/farajsharman/")
           }
-        > <a href="https://www.linkedin.com/in/farajsharman/">"https://www.linkedin.com/in/farajsharman/"</a>
-          
+        >
+          {" "}
+          <a href="https://www.linkedin.com/in/farajsharman/">
+            "https://www.linkedin.com/in/farajsharman/"
+          </a>
         </li>
       </ul>
     </div>

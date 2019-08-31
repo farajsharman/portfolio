@@ -18,11 +18,11 @@
  }
  
  li.telephone {
-     list-style-image: url('logo-image.js/abouticon.png');
+     list-style-image: url('./logo-image.js/aboutIcon.png');
  }
      
  li.email {
-     list-style-image: url'src\logo-image.js\contacticon.png';
+     list-style-image: url('./logo-image.js/contactIcon.png');
  }
                                                          /* Get some sort of animation in images*/
  li.github {

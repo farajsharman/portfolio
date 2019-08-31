@@ -1,13 +1,13 @@
 import React from 'react';
-import bootstrap from './logo-image.js\bootstrap.png';
-import css3 from './logo-images/css3.png';
-import github from './logo-images/github.png';
-import heroku from './logo-images/heroku.png';
-import html5 from './logo-images/html5.png';
-import javascript from './logo-images/javascript.png';
-import react from './logo-images/react.png';
-import nodejs from './logo-images/nodejs.png';
-import wordpress from './logo-images/wordpress.png';
+import bootstrap from './logo-image.js/bootstrap.png';
+import css3 from './logo-image/css3.png';
+import github from './logo-image/github.png';
+import heroku from './logo-image/heroku.png';
+import html5 from './logo-image/html5.png';
+import javascript from './logo-image/javascript.png';
+import react from './logo-image/react.png';
+import nodejs from './logo-image/nodejs.png';
+import wordpress from './logo-image/wordpress.png';
 import'./Skills.css' ;
 export default function About() {
     return (
